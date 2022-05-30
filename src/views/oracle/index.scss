@@ -1,0 +1,41 @@
+.oracle-waper {
+    max-width: 1440px;
+    margin: 100px auto 0;
+
+    .oracle-waper_icon {
+        position: relative;
+        color: #00D7D7;
+        font-weight: 700;
+        font-size: 24px;
+        padding-left: 42px;
+        line-height: 30px;
+        margin-bottom: 26px;
+
+        &::after {
+            display: block;
+            position: absolute;
+            top: 2px;
+            left: 0;
+            content: '';
+            width: 26px;
+            height: 26px;
+            background-image: url('../../assets/images/icon.svg');
+            background-size: contain;
+        }
+    }
+
+    .oracle-waper_content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: flex-start;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 290px;
+            height: 138px;
+            visibility: hidden;
+        }
+    }
+}
